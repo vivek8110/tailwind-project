@@ -1,6 +1,6 @@
 body {
     font-family: "Inter" !important;
-    overflow-x: hidden ;
+    overflow-x: hidden !important;
 }
 
 a{
@@ -296,6 +296,44 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     display: none;
 }
 
+.category-box{
+    background-color: yellow;
+}
+.category-img{
+    transition: all 0.5s;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.category-img img{
+    filter: grayscale(100%);
+    transition: 600ms ease;
+}
+
+.category-img:hover img {
+    scale: 1.25;
+    filter: grayscale(0);
+}
+
+.banner-font{
+    font-size: 90px;
+}
+
+@media (max-width:1080px) {
+    .banner-font{
+        font-size: 60px;
+    }
+}
+
+
+@media (max-width:576px) {
+    .banner-font{
+        font-size: 34px;
+    }
+}
 
 
 
